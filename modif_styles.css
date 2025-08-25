@@ -225,7 +225,7 @@ header nav ul li a:hover::after {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 #welcome-message {
@@ -732,15 +732,18 @@ footer p {
     #team {
         min-height: 1620px;
     }
-    
+
     .team-grid {
         flex-direction: column;
     }
 }
 
 /* 900px Screen Width */
-@media screen and (max-width: 900px){
-    h1,h2,h3 {
+@media screen and (max-width: 900px) {
+
+    h1,
+    h2,
+    h3 {
         font-size: 1.4rem;
         /* Adjust header sizes for tablets */
     }
@@ -750,15 +753,15 @@ footer p {
         /* Adjust paragraph size for readability */
     }
 
-        .google-form-container {
-            padding-bottom: 100%;
-            /* Adjusted aspect ratio for medium-sized screens */
-        }
+    .google-form-container {
+        padding-bottom: 100%;
+        /* Adjusted aspect ratio for medium-sized screens */
+    }
 }
 
 /* 890px Screen Width */
-@media screen and (max-width: 890px){
-    
+@media screen and (max-width: 890px) {
+
     /* About Section */
     #about {
         min-height: 550px;
@@ -774,7 +777,7 @@ footer p {
         justify-content: center;
         gap: 0px;
     }
-    
+
     /* Team Section */
     .team-grid {
         flex-direction: column;
@@ -784,7 +787,7 @@ footer p {
     #contact {
         min-height: 1000px;
     }
-    
+
     .contact-flex {
         flex-direction: column;
         position: relative;
@@ -800,7 +803,7 @@ footer p {
 }
 
 /* 840px Screen Width */
-@media screen and (max-width: 840px){
+@media screen and (max-width: 840px) {
     #about {
         min-height: 600px;
     }
@@ -989,7 +992,7 @@ footer p {
         /* Allow cards to adjust to smaller screen width */
         margin: 0 15px;
         /* Adjust spacing between cards */
-            
+
     }
 
     /* Contact Section */
@@ -997,7 +1000,8 @@ footer p {
         flex-direction: column;
     }
 
-    .contact-info, .contact-form {
+    .contact-info,
+    .contact-form {
         width: 100%;
         margin-bottom: 20px;
     }
@@ -1010,21 +1014,36 @@ footer p {
     }
 }
 
+@media screen and (max-width: 715px) {
+    .hero {
+        min-height: 550px;
+    }
+
+    #welcome-container {
+        box-sizing: border-box;
+        /* Ensures that the padding wont go outside the section bounds */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 /* 600px Screen Width */
 @media screen and (max-width: 600px) {
-    
+
     /* General */
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-size: 1.2rem;
         /* Adjust header sizes */
     }
-    
+
     p {
         font-size: 0.9rem;
         /* Adjust paragraph font size */
     }
-    
+
     /* Header Section */
 
     .hero {
@@ -1034,8 +1053,8 @@ footer p {
     /* Contact Section */
 
     .google-form-container {
-    padding-bottom: 80%;
-    /* Adjusted aspect ratio for smaller screens */
+        padding-bottom: 80%;
+        /* Adjusted aspect ratio for smaller screens */
     }
 }
 
@@ -1060,7 +1079,7 @@ footer p {
     #team {
         min-height: 2000px;
     }
-    
+
     .team-member {
         width: 250px;
         min-height: 925px;
@@ -1083,7 +1102,7 @@ footer p {
         /* Full width for mobile devices */
         height: auto;
     }
-    
+
     .news-text h3 {
         font-size: 18px;
         /* Adjust the title font size for smaller screens */
@@ -1097,8 +1116,8 @@ footer p {
 
 /* 430px Screen Width */
 @media screen and (max-width: 430px) {
-    
-    
+
+
     /* Header Section */
 
     header .logo {
@@ -1113,8 +1132,13 @@ footer p {
 
     /* Home Section */
 
+    .hero {
+        height: 850px;
+    }
+
     #welcome-container {
-        box-sizing: border-box;   /* Ensures that the padding wont go outside the section bounds */     
+        box-sizing: border-box;
+        /* Ensures that the padding wont go outside the section bounds */
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -1134,7 +1158,7 @@ footer p {
     #team {
         min-height: 2050px;
     }
-    
+
     .team-member {
         min-height: 925px;
 
@@ -1149,7 +1173,7 @@ footer p {
     #contact {
         height: 1200px;
     }
-    
+
     .contact-flex {
         top: 80px;
         align-items: center;
@@ -1176,8 +1200,20 @@ footer p {
 
 }
 
+@media screen and (max-width: 360px) {
+    .hero {
+        min-height: 900px;
+    }
+}
+
+
 /* 344px Screen Width */
-@media screen and (max-width: 344px)  {
+@media screen and (max-width: 344px) {
+
+    .hero {
+        min-height: 1000px;
+    }
+
     .team-member {
         max-width: 250px;
     }
