@@ -438,7 +438,7 @@ header nav ul li a:hover::after {
     align-items: center;
     /* Center align the content */
     top: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 /* Title Styling */
@@ -1085,4 +1085,84 @@ footer p {
         font-size: 14px;
         /* Adjust description font size */
     }
+}
+
+@media screen and (max-width: 360px) {
+    
+    
+    /* Header Section */
+
+    header .logo {
+        width: 110px;
+        left: 50px;
+        top: 20px;
+    }
+
+    header .navbar {
+        right: -10px;
+    }
+
+    /* Home Section */
+
+    #welcome-container {
+        box-sizing: border-box;   /* Ensures that the padding wont go outside the section bounds */     
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* About Section */
+
+    #about {
+        min-height: 780px;
+    }
+
+    #about-main.container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Team Section */
+    #team {
+        min-height: 2050px;
+    }
+    
+    .team-member {
+        min-height: 925px;
+
+    }
+
+    .team-content {
+        height: 900px;
+        padding-top: 50px;
+    }
+
+    /* Contact Section */
+    #contact {
+        height: 1200px;
+    }
+    
+    .contact-flex {
+        top: 80px;
+        align-items: center;
+    }
+
+    .google-form-container {
+        box-sizing: border-box;
+        align-items: center;
+        max-width: 260px;
+    }
+
+    #google-form {
+        width: 260px;
+
+    }
+
+    #footer-logo-container {
+        display: none;
+    }
+
+    #footer-placeholder-container {
+        display: none;
+    }
+
 }
