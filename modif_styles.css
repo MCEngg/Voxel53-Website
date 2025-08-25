@@ -181,7 +181,7 @@ header nav ul li a:hover::after {
         width: 100vw;
         position: absolute;
         top: 70px;
-        right: 0px;
+        right: -50px;
         padding: 20px;
         background-color: white;
         display: none;
@@ -1156,17 +1156,17 @@ footer p {
 
     /* Team Section */
     #team {
-        min-height: 2050px;
+        min-height: 2200px;
     }
 
     .team-member {
-        min-height: 925px;
+        min-height: 975px;
 
     }
 
     .team-content {
         height: 900px;
-        padding-top: 50px;
+        padding-top: 20px;
     }
 
     /* Contact Section */
